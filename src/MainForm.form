@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="838" height="400"/>
+    </constraints>
+    <properties>
+      <name value=""/>
+    </properties>
+    <border type="line" title="SWING" title-justification="2" title-position="2">
+      <font name="Franklin Gothic Heavy" size="14" style="3"/>
+      <title-color color="-4516325"/>
+    </border>
+    <children>
+      <grid id="c2314" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e0de1" class="javax.swing.JButton" binding="expandButton">
+            <constraints/>
+            <properties>
+              <text value="Collapse"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="be64c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-12828863"/>
+          <name value=""/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="86199" binding="expandPanel" layout-manager="GridBagLayout">
+            <constraints/>
+            <properties>
+              <inheritsPopupMenu value="true"/>
+              <minimumSize width="200" height="100"/>
+              <preferredSize width="400" height="200"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="7caa3" class="javax.swing.JTextField" binding="familieTextField">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4474198"/>
+                  <columns value="30"/>
+                </properties>
+              </component>
+              <component id="a13a9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <labelFor value="7caa3"/>
+                  <text value="Фамилия"/>
+                </properties>
+              </component>
+              <component id="b4062" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Имя"/>
+                </properties>
+              </component>
+              <component id="771ee" class="javax.swing.JTextField" binding="nameTextField">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="30"/>
+                </properties>
+              </component>
+              <component id="85214" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Отчество"/>
+                </properties>
+              </component>
+              <component id="df796" class="javax.swing.JTextField" binding="surnameTextField">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="30"/>
+                  <toolTipText value="Отчество"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <vspacer id="64809">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="2e7a6" binding="collapsePanel" layout-manager="GridBagLayout">
+            <constraints/>
+            <properties>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <opaque value="true"/>
+              <preferredSize width="400" height="200"/>
+              <visible value="false"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-4516325"/>
+            </border>
+            <children>
+              <component id="8c44b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Ф.И.О."/>
+                </properties>
+              </component>
+              <component id="8d79" class="javax.swing.JTextArea" binding="fioTextArea">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <margin top="5" left="5" bottom="5" right="5"/>
+                  <preferredSize width="300" height="40"/>
+                </properties>
+              </component>
+              <vspacer id="9a6c">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
